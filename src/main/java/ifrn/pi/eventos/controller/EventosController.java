@@ -10,4 +10,8 @@ public class EventosController {
 	public String form() {
 		return "formEvento";
 	}
+	
+	public String submetido() {
+		System.out.println("O formulário foi submetido corretamente!");
+	}
 }
