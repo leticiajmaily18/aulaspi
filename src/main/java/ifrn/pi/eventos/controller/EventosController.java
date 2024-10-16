@@ -17,11 +17,11 @@ public class EventosController {
 
     @PostMapping("/eventos/submeter")
     public String submetido(Evento evento) {
-        System.out.println("Nome: " + evento.getNome());
-        System.out.println("Local: " + evento.getLocal());
-        System.out.println("Data: " + evento.getData());
-        System.out.println("Horário: " + evento.getHorario());
-        
-        return "formSubmetido";
+
+    	 System.out.println("Nome: " + evento.getNome());
+         System.out.println("Local: " + evento.getLocal());
+         System.out.println("Data: " + evento.getData());
+         System.out.println("Horário: " + evento.getHorario());
+    	return "formSubmetido";
     }
 }
