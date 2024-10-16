@@ -1,12 +1,12 @@
 package ifrn.pi.eventos.models;
 
 public class Evento {
-
 	private String nome;
 	private String local;
 	private String data;
 	private String horario;
 
+	// Getters e Setters
 	public String getNome() {
 		return nome;
 	}
@@ -38,5 +38,4 @@ public class Evento {
 	public void setHorario(String horario) {
 		this.horario = horario;
 	}
-
 }
