@@ -22,6 +22,6 @@ public class EventosController {
         System.out.println("Data: " + evento.getData());
         System.out.println("Horário: " + evento.getHorario());
         
-        return "formSubmitSuccess";
+        return "formSubmetido";
     }
 }
