@@ -8,12 +8,11 @@ import jakarta.persistence.Id;
 @Entity
 public class Evento {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
 	private String nome;
 	private String local;
 	private String data;
+	private String localF;
+	private String dataF;
 	private String horario;
 	
 	public Long getId() {
@@ -33,19 +32,19 @@ public class Evento {
 	}
 
 	public String getLocal() {
-		return local;
+		return localF;
 	}
 
 	public void setLocal(String local) {
-		this.local = local;
+		this.localF = local;
 	}
 
 	public String getData() {
-		return data;
+		return dataF;
 	}
 
 	public void setData(String data) {
-		this.data = data;
+		this.dataF = data;
 	}
 
 	public String getHorario() {
@@ -55,4 +54,11 @@ public class Evento {
 	public void setHorario(String horario) {
 		this.horario = horario;
 	}
+
+	@Override
+	public String toString() {
+		return "Evento [id=" + id + ", nome=" + nome + ", local=" + localF + ", data=" + dataF + ", horario=" + horario
+				+ "]";
+	}
+	
 }
