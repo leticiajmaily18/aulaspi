@@ -14,8 +14,6 @@ public class Evento {
 	private String nome;
 	private String local;
 	private String data;
-	private String localF;
-	private String dataF;
 	private String horario;
 	
 	public Long getId() {
@@ -34,22 +32,6 @@ public class Evento {
 		this.nome = nome;
 	}
 
-	public String getLocal() {
-		return localF;
-	}
-
-	public void setLocal(String local) {
-		this.localF = local;
-	}
-
-	public String getData() {
-		return dataF;
-	}
-
-	public void setData(String data) {
-		this.dataF = data;
-	}
-
 	public String getHorario() {
 		return horario;
 	}
@@ -60,8 +42,24 @@ public class Evento {
 
 	@Override
 	public String toString() {
-		return "Evento [id=" + id + ", nome=" + nome + ", local=" + localF + ", data=" + dataF + ", horario=" + horario
+		return "Evento [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario=" + horario
 				+ "]";
+	}
+
+	public String getLocal() {
+		return local;
+	}
+
+	public void setLocal(String local) {
+		this.local = local;
+	}
+
+	public String getData() {
+		return data;
+	}
+
+	public void setData(String data) {
+		this.data = data;
 	}
 	
 }
